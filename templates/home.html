@@ -1,0 +1,94 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>shark now</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'aboutme_sidebar.css' %}">
+</head>
+
+<body>
+
+
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class='aboutme'>
+            <h2>About Me</h2>
+            <h5>Personal info:</h5>
+            <div class="box" style="height:200px;">
+                <p>VKS Deepak Reddy<br><br>1st year BTech<br><br>Mathematics and computing</p>
+            </div>
+        </div class='side'>
+        <h5> Interests:</h5>
+        <div class="box" style="height:60px;">Learning new things</div><br>
+        <div class="box" style="height:60px;">Drawing</div><br>
+        <div class="box" style="height:60px;">Browsing</div>
+    </div>
+    </div>
+
+    <div id="main">
+        <div class="heading">
+            <h1>Shar<b>k now</b></h1>
+            <h2>A <b>IITH</b> Peer learning platform</h2>
+        </div>
+        <div class="navbar">
+            <a href="/login" class="right">CONTENT</a>
+            <button class="openbtn" onclick="openNav()">ABOUT ME</button>
+        </div>
+
+        <div class="row">
+
+            <div class="side">
+
+                <div class="box" style="height:200px;">
+                    <h2>PYTHON</h2>
+                </div>
+
+                <p>Python is an interpreted high-level general-purpose programming language. Python's design philosophy
+                    emphasizes code readability with its notable use of significant indentation.</p>
+            </div>
+            <div class="side">
+
+                <div class="box" style="height:200px;">
+                    <h2>HTML/CSS</h2>
+                </div>
+                <p> HTML is the standard markup language for documents designed to be displayed in a web browser. It can
+                    be
+                    assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript
+                </p>
+            </div>
+            <div class="side">
+                <div class="box" style="height:200px;">
+                    <h2>DJANGO</h2>
+                </div>
+                <p>Django is a Python-based free and open-source web framework that follows the model–template–views
+                    architectural pattern.</p>
+            </div>
+            <div class="side">
+                <div class="box" style="height:200px;">
+                    <h2>GIT</h2>
+                </div>
+                <p>Git is software for tracking changes in any set of files, usually used for coordinating work among
+                    programmers collaboratively developing source code during software development.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>LET'S SHARE AND LEARN!!</h2>
+        </div>
+
+    </div>
+    <script src="{% static 'aboutme_sidebar.js' %}"></script>
+
+
+
+
+</body>
+
+</html>
